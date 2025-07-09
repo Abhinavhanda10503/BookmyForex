@@ -36,14 +36,11 @@
     </noscript>
 
         <!-- ✅ Bootstrap 3.3.7 (block loading to prevent layout shift) -->
-    <link
-          rel="stylesheet"
-          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-          media="print"
-          onload="this.onload=null;this.media='all';">
-    <noscript>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    </noscript>
+<link rel="preload" as="style" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" onload="this.onload=null;this.rel='stylesheet'">
+<noscript>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</noscript>
+
 
 
         <!-- ✅ Platform styles (blocking, likely critical) -->
